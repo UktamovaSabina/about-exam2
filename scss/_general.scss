@@ -1,0 +1,46 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: 'Public Sans', sans-serif;
+    font-style: normal;
+    background-color: $first-color;
+    background-image: url(/images/top-circle-b-img.png);
+    background-repeat: no-repeat;
+    background-position: top right;
+    background-size: 780px;
+
+    @media screen and (max-width:900px) {
+        & {
+            background-image: url(/images/top-circle-b-img-tablet.png);
+            background-repeat: no-repeat;
+            background-position: top right;
+            background-size: 360px;
+        }
+    }
+
+    @media screen and (max-width:550px) {
+        & {
+            background-image: url(/images/top-circle-b-img-mobile.png);
+            background-repeat: no-repeat;
+            background-position: top right;
+            background-size: 300px;
+        }
+    }
+}
+
+ul {
+    list-style-type: none;
+}
+
+img {
+    display: block;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+}

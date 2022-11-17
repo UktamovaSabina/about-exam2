@@ -1,0 +1,87 @@
+.hero__container {
+    padding: 82px 95px 100px 95px;
+
+    h1 {
+        max-width: 730px;
+        width: 100%;
+        font-family: 'DM Serif Display';
+        font-weight: 400;
+        font-size: 56px;
+        line-height: 56px;
+        letter-spacing: -0.430769px;
+        color: $second-color;
+        margin-bottom: 51px;
+
+
+        @media screen and (max-width:900px) {
+            & {
+                text-align: center;
+                font-size: 48px;
+                letter-spacing: -0.369231px;
+                margin-bottom: 54px;
+            }
+        }
+
+        @media screen and (max-width:550px) {
+            font-size: 32px;
+            line-height: 36px;
+            letter-spacing: -0.246154px;
+            margin-bottom: 40px;
+        }
+    }
+
+    .hero__info {
+
+        li {
+            display: flex;
+            gap: 30px;
+
+            &:first-child {
+                margin-bottom: 56px;
+            }
+
+
+
+            h3 {
+                max-width: 255px;
+                width: 100%;
+                font-family: 'DM Serif Display';
+                font-weight: 400;
+                font-size: 32px;
+                line-height: 40px;
+                letter-spacing: -0.246154px;
+                color: $second-color;
+
+                @media screen and (max-width:550px) {
+                    & {
+                        font-size: 24px;
+                        line-height: 32px;
+                        letter-spacing: -0.184615px;
+                        margin-bottom: 16px;
+                    }
+                }
+            }
+
+            p {
+                & {
+                    font-weight: 400;
+                    font-size: 15px;
+                    line-height: 28px;
+                    color: $fifth-color;
+                }
+            }
+
+            @media screen and (max-width:550px) {
+                & {
+                    flex-direction: column;
+                    text-align: center;
+
+                }
+
+                &:first-child {
+                    margin-bottom: 48px;
+                }
+            }
+        }
+    }
+}
